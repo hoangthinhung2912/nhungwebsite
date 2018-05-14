@@ -1,0 +1,90 @@
+
+:host /deep/ #login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imgs/login.jpg');
+}
+
+:host /deep/ .avatar img {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  color: aliceblue;
+}
+
+.avatar {
+  width: 100px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  z-index: 4;
+}
+
+:host /deep/.center {
+  margin: auto;
+}
+
+#form-container {
+  padding: 50px;
+  background: rgba(0,0,0,0.2);
+  box-shadow: 5px 3px 10px #333;
+  border-radius: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  float: right;
+}
+
+:host /deep/ .myInput{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 9px auto;
+  font-size: 17px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(3,3,3,.2);
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+:host /deep/ div {
+  outline: none;
+  border: none; 
+}
+
+:host /deep/ input:focus{
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(3,3,3,.4);
+}
+
+:host /deep/ .dx-texteditor {
+  background: transparent;
+}
+
+:host /deep/ label {
+  display: none;
+}
+
+:host /deep/ ::placeholder {
+  color: lightgray;
+}
+
+:host /deep/ #summary {
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+:host /deep/ #register {
+  float: left;
+}

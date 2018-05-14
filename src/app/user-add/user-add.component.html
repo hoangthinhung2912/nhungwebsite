@@ -1,0 +1,51 @@
+<div>
+  <form class="dx-viewport" action="" method="POST">
+    <div>
+      <dx-popup
+        class="popup"
+        width="500px"
+        height="600px;"
+        [showTitle]="true"
+        [dragEnabled]="true"
+        titleTemplate="REGISTER"
+        [closeOnOutsideClick]="true"
+        [(visible)]="addClientVisible">
+        <div *dxTemplate="let data of 'content'">
+          <dx-form
+            [showValidationSummary]="true"
+            validationGroup="customerData"
+            [colCount]="3">
+            <dxi-item dataField="Username" [colSpan]="3">
+              <dxi-validation-rule type="required" message="Name is required"></dxi-validation-rule>
+            </dxi-item>
+            <dxi-item dataField="Password" [colSpan]="3">
+              <dxi-validation-rule type="required" message="Email is required"></dxi-validation-rule>
+            </dxi-item>
+            <dxi-item 
+              [colSpan]="3"
+              dataField="Role"
+              editorType="dxSelectBox"
+              [editorOptions]="{ dataSource: Clients }">
+              <dxi-validation-rule
+                type="required"
+                message="Role is required">
+              </dxi-validation-rule>
+            </dxi-item>
+            <dxi-item 
+              [colSpan]="3"
+              dataField="Company"
+              editorType="dxSelectBox"
+              [editorOptions]="{ dataSource: Clients }">
+              <dxi-validation-rule
+                type="required"
+                message="Company is required">
+              </dxi-validation-rule>
+            </dxi-item>
+          </dx-form>
+          <dx-button text='Close' class="btn no" type='default' (onClick)="ClosePopup('Client')"></dx-button>  
+          <dx-button text='Add' class="btn yes" type='default'></dx-button>                      
+        </div>
+      </dx-popup>
+    </div>
+  </form>
+</div>

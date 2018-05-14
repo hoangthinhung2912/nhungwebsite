@@ -1,0 +1,45 @@
+
+:host /deep/ .dx-popup-title {
+    background-color: #607D8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+:host /deep/ .dx-popup-content{
+    padding: 20px 40px;
+}
+
+:host /deep/ .btn {
+    margin: 10px;
+    float: right;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: grey;
+    border: 1px solid #DDDDDD;
+}
+
+:host /deep/ .dx-button-content {
+    padding: 0px 7px;
+}
+
+:host /deep/ .yes:hover, .yes:focus {
+    background-color: #607D8B;
+    color: #fff;
+}
+
+:host /deep/ .no:hover {
+   background-color: lightgray;
+}
+
+:host /deep/ .dx-overlay-shader {
+    background-color: rgba(61, 56, 56, 0.8);
+}
+
+:host /deep/ .active {
+    border-bottom: 2px solid #607D8B;
+}

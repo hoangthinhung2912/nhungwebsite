@@ -1,0 +1,18 @@
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+	padding: 0px 12px;
+	margin-left: 20%;
+    width: 80%;
+    border-left: none;
+	height: 100vh;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.content {
+    margin-top: 60px;
+}

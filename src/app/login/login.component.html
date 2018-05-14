@@ -1,0 +1,43 @@
+<div id="login" class="center"> 
+  <div id="form-container">
+    <div class="avatar center">
+      <img src="../assets/imgs/user.png" alt="avatar">
+    </div>
+    <dx-form 
+      labelLocation="top"
+      validationGroup="customerData"
+      (onContentReady)="onContentReady($event)"
+      id="form"
+      (onInitialized)="onFormInit($event)">
+      <dxi-item dataField="username">
+        <dxi-validation-rule 
+          type="required"
+          message="Login is required">
+        </dxi-validation-rule>
+      </dxi-item>
+      <dxi-item dataField="password" [editorOptions]="{ mode: 'password' }">
+        <dxi-validation-rule 
+          type="required"
+          message="Login is required">
+        </dxi-validation-rule>
+      </dxi-item>
+      <dx-validation-summary></dx-validation-summary>
+    </dx-form>
+    <dx-button
+      id="register"
+      text="Register"
+      type="success" 
+      class="button" (click)="Register()">
+    </dx-button>
+    <dx-button
+      text="Login"
+      type="success" 
+      class="button"
+      [useSubmitBehavior]="true"
+      validationGroup="customerData" (click)="login($event)">
+    </dx-button>
+  </div>
+</div>
+
+<app-user-add [childMessage]="isRegister"></app-user-add>
+

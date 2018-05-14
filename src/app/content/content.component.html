@@ -1,0 +1,35 @@
+<div class="main">
+  <div>
+    <dx-list
+      class="list"
+      [dataSource]="listDataSource"
+      (onContentReady)="onContentReady($event)">
+
+      <dxo-remote-operations
+        [sorting]="true"
+        [paging]="true">
+      </dxo-remote-operations>
+      <dxo-paging [pageSize]="12"></dxo-paging>
+      <dxo-pager
+          [showPageSizeSelector]="true"
+          [allowedPageSizes]="[8, 12, 20]"
+      ></dxo-pager>   
+
+      <div *dxTemplate="let item of 'item'" class="item">
+        <div class="main-content">
+            <div class="left-content">
+                <div class="userId">{{item.userId}}</div>
+                <div class="id">{{item.id}}</div>
+            </div>
+            <div class="right-content">
+                <div class="title">{{item.title}}</div>
+                <div class="body">{{item.body}}</div>
+            </div>  
+        </div>
+        <div *ngFor="let i of it" class="language">
+          <span class="language-item">{{i}}</span>
+        </div>
+      </div>
+    </dx-list>
+  </div>
+</div>

@@ -1,0 +1,142 @@
+/*
+** SEARCH
+ */
+
+ #wrap {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    position: relative;
+}     
+
+    :host /deep/ #wrap i {
+        font-size: 20px;
+        width: 20px;
+        height: 30px;
+        color: white;
+    }
+
+input[type="text"] {
+    height: 30px;
+    font-size: 15px;
+    display: inline-block;
+    font-family: "Lato";
+    border: none;
+    outline: none;
+    color: #555;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+border-bottom: 1px solid #BBB;
+}
+
+input[type="text"]:focus {
+    width: 250px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+}
+input[type="submit"] {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    color:red;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+    background: none;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.home {
+    height: 600px;
+    padding-top: 200px;
+    background-image: url("imgs/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+#logo {
+    
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: cursive;
+    border: solid 0.5px white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.link:hover {
+    background-color: gray;
+}
+
+.title {
+    clear: both;
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    margin-top: 150px;
+}
+ 
+
+.caption {
+    color: #fff;
+    font-family: cursive;
+    display: inline;
+}
+
+.selector {
+    display: inline-block;
+    width: 33%;
+}
+
+#ex {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

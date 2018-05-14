@@ -1,0 +1,47 @@
+<div id="ex">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">For Companies</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 center">
+        
+      </ul>
+      <div id="wrap">
+        <form action="" autocomplete="on">
+        <input id="search" name="search" type="text" placeholder="What're you looking for ?"><i class="fa fa-search"></i><input id="search_submit" value="Rechercher" type="submit">
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="home">
+ <h1 class="title center">FIND THE JOB</h1>
+  <div class="selected-data center">
+    <div class="selector">
+        <span class="caption">Selected Items</span>
+        <dx-tag-box
+          [dataSource]="companies"
+          displayExpr="CompanyName">
+        </dx-tag-box>
+    </div>
+    <div class="selector">
+        <span class="caption">Selected Items</span>
+        <dx-tag-box
+          [dataSource]="companies"
+          displayExpr="CompanyName">
+        </dx-tag-box>
+    </div>
+    <div class="selector">
+        <span class="caption">Selected Items</span>
+        <dx-tag-box
+          [dataSource]="companies"
+          displayExpr="CompanyName">
+        </dx-tag-box>
+    </div>
+  </div>
+</div>
+<app-content></app-content>
+<router-outlet></router-outlet>
+

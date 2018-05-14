@@ -1,0 +1,32 @@
+<div class="center">
+  <form>
+    <dx-form id="form"
+    [formData]="employee"
+    width="600px"
+    validationGroup="customerData">
+    <dxi-item itemType="group" cssClass="first-group">
+      <dxi-item>
+        <div class="form-avatar"></div>
+      </dxi-item>
+      <dxi-item itemType="group">
+          <dxi-item dataField="name"></dxi-item>
+          <dxi-item dataField="address"></dxi-item>
+          <dxi-item dataField="phone"></dxi-item>
+          <dxi-item dataField="email"></dxi-item>
+          <dxi-item dataField="fax"></dxi-item>
+      </dxi-item>
+    </dxi-item>
+</dx-form>
+<br/>
+<dx-button
+  text="Register"
+  type="success"
+  validationGroup="customerData"
+  [useSubmitBehavior]="true">
+</dx-button>
+<dx-button
+  text="Cancel"
+  type="default">
+</dx-button>
+  </form>
+</div>

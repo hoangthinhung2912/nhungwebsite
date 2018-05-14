@@ -1,0 +1,20 @@
+<div>
+  <app-header-manager-page></app-header-manager-page>
+	<div class="content">
+		<div class="container-fluid">
+      <app-sidebar-manager-page [childMessage]="listAction" ></app-sidebar-manager-page>
+      
+      <div id="tab1" class="tabcontent">
+        <app-post-table></app-post-table>
+      </div>
+      
+      <div id="tab2" class="tabcontent">
+        <app-user-table></app-user-table>
+      </div>
+      
+      <div id="tab3" class="tabcontent">
+        <app-company-table></app-company-table>
+      </div>
+		</div>
+	</div>
+</div>
